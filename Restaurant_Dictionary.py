@@ -1,5 +1,6 @@
 import time
 
+#Restaurant Menu
 Food = {
     "food": {
         "White Rice": 200,
@@ -16,10 +17,10 @@ Food = {
     "drinks": {
         "Chapman": 1500,
         "Teem": 200,
-        "Water": 150
+        "Water": 150,
     }
 }
-
+# Customer Order Details
 customer_order = {}
 
 print("Welcome to Khan Restaurant")
@@ -40,7 +41,7 @@ if answer == "yes":
     y = 1
     print("Here's our food list:")
     
-    # Main Food Order
+    ## Main Food Order
     for meal in Food["food"]:
         print(y, "-", meal)
         y += 1
@@ -54,7 +55,7 @@ if answer == "yes":
     else:
         print("Invalid choice")
 
-    # Protein Order
+    ## Protein Order
     time.sleep(1)
     print("Would you like a side of protein with that? (yes/no)")
     protein_answer = input("")
@@ -76,7 +77,7 @@ if protein_answer == "yes":
         customer_order[selected_side] = Food["protein"][selected_side]
         print("You've chosen", selected_side + " as your protein")
         
-        # Drink Order
+        ## Drink Order
         time.sleep(1)
         print("You now have", selected_meal + " and" , selected_side + " as your combo")
         time.sleep(1)
