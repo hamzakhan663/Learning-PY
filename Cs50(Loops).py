@@ -66,40 +66,81 @@
 #    print(students[i])
    
 
-fairies = [] #empty list to collect input of fairies
-valid_fairies = ["Bloom","Aisha","Musa","Terra","Flora","Stella"] #list holding valid names of fairies the program will run user input through to validate
+# fairies = [] #empty list to collect input of fairies
+# valid_fairies = ["Bloom","Aisha","Musa","Terra","Flora","Stella"] #list holding valid names of fairies the program will run user input through to validate
 
-for i in range(6): #ask for 6 input
-    while True:
-        name_of_fairies = input(f"Enter name of fairy {i + 1}: ") #ask user to input names, i+1 to make it look like "Enter name of fairy 1"
-        if len(name_of_fairies) != 0 and name_of_fairies in valid_fairies : # Add names to the empty list if and only if the length of the list is not zero and the names of fairies inputed corresponds with the valid list containing fairy names
-            fairies.append(name_of_fairies)
-            break
-        else:
-            print("Invalid Fairy Name!") #If those conditions aren't met, print this
+# for i in range(6): #ask for 6 input
+#     while True:
+#         name_of_fairies = input(f"Enter name of fairy {i + 1}: ") #ask user to input names, i+1 to make it look like "Enter name of fairy 1"
+#         if len(name_of_fairies) != 0 and name_of_fairies in valid_fairies : # Add names to the empty list if and only if the length of the list is not zero and the names of fairies inputed corresponds with the valid list containing fairy names
+#             fairies.append(name_of_fairies)
+#             break
+#         else:
+#             print("Invalid Fairy Name!") #If those conditions aren't met, print this
 
-types_of_fairies = ["Fire Fairy", "Water Fairy", "Mind Fairy", "Earth Fairy", "Nature Fairy", "Light Fairy"] #List containing each type of fairy from the valid_fairies list
+# types_of_fairies = ["Fire Fairy", "Water Fairy", "Mind Fairy", "Earth Fairy", "Nature Fairy", "Light Fairy"] #List containing each type of fairy from the valid_fairies list
 
-if len(fairies) >= 3:  # Check if there are at least 3 fairies
+# if len(fairies) >= 3:  # Check if there are at least 3 fairies
     
-    fairy_index = 2
-    if len(fairies) > fairy_index:
-        fairy_name = fairies[fairy_index]
-        if fairy_name in valid_fairies:
-            index_in_valid_fairies = valid_fairies.index(fairy_name)
-            fairy_type = types_of_fairies[index_in_valid_fairies]
-            fairy_question= input(f" What type of fairy is {fairy_name}?: ")
-            if fairy_question == fairy_type:
-                print("Indisputably correct!")
-            else: 
-             print("FAIL!")
-        else:
-            print("Fairy not in list")
-    else: 
-        print("Amount of fairies must be at least 3")
+#     fairy_index = 2
+#     if len(fairies) > fairy_index:
+#         fairy_name = fairies[fairy_index]
+#         if fairy_name in valid_fairies:
+#             index_in_valid_fairies = valid_fairies.index(fairy_name)
+#             fairy_type = types_of_fairies[index_in_valid_fairies]
+#             fairy_question= input(f" What type of fairy is {fairy_name}?: ")
+#             if fairy_question == fairy_type:
+#                 print("Indisputably correct!")
+#             else: 
+#              print("FAIL!")
+#         else:
+#             print("Fairy not in list")
+#     else: 
+#         print("Amount of fairies must be at least 3")
         
               
-else:
-    print ("Enter up to three fairies")
+# else:
+#     print ("Enter up to three fairies")
 
 #Dictionaries
+# close_friends = {
+#     "Hamza": 18,
+#     "Zayd": 17,
+#     "Muzzamil": 16,
+#     "Nuriyah": 19,
+#     "Jalal-ul-deen": 23
+# }
+
+# for friend in close_friends:
+#     print (f"{friend} is {close_friends[friend]} years old.")
+    
+
+#Multiple Dictionaries nested in a list
+close_friends = [
+    {
+        "name": "Hamza",
+        "age": 18,
+        "education": "Pre-University"
+    },
+       
+    {
+        "name": "Zayd",
+        "age": 17,
+        "education": "Secondary"
+    },
+    
+    {
+        "name": "Muzzamil",
+        "age": 16,
+        "education": "Secondary"
+    },
+    
+    {
+        "name": "Nuriyah",
+        "age": 19,
+        "education": "University"
+    }
+]
+
+for friend in close_friends:
+    print(f"My name is {friend['name']}. I am a {friend['age']} year old currently in my {friend['education']} level of education at the moment.")
