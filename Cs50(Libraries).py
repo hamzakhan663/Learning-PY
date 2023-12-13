@@ -46,7 +46,7 @@ def mean_function():
             if input("Are you done entering numbers? Type 'Yes' to finish: ") == 'Yes':
              break
             else:
-                print("Enter a number:")
+                print("Enter a number: ")
     # check if numbers are in list 
     if len(mean_list) > 0:
         math_function = statistics.mean(mean_list)
