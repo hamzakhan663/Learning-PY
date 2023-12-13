@@ -33,27 +33,27 @@
 #     median_function()
 #     modal_function()
 
-# print("When done entering values, press any key to exit.")
-# sleep(1)
-# #Mean Function
-# def mean_function():
-#     mean_list = []
-#     while True: #Loop until all numbers are entered
-#         try: 
-#             question = int(input("Enter a number for Mean: "))
-#             mean_list.append(question)
-#         except ValueError: 
-#             if input("Are you done entering numbers? Type 'Yes' to finish: ") == 'Yes':
-#              break
-#             else:
-#                 print("Enter a number:")
-#     # check if numbers are in list 
-#     if len(mean_list) > 0:
-#         math_function = statistics.mean(mean_list)
-#         print(math_function)
-#     else:
-#         print("No numbers entered")
-#     sleep(2)
+print("When done entering values, press any key to exit.")
+sleep(1)
+#Mean Function
+def mean_function():
+    mean_list = []
+    while True: #Loop until all numbers are entered
+        try: 
+            question = int(input("Enter a number for Mean: "))
+            mean_list.append(question)
+        except ValueError: 
+            if input("Are you done entering numbers? Type 'Yes' to finish: ") == 'Yes':
+             break
+            else:
+                print("Enter a number:")
+    # check if numbers are in list 
+    if len(mean_list) > 0:
+        math_function = statistics.mean(mean_list)
+        print(math_function)
+    else:
+        print("No numbers entered")
+    sleep(2)
         
 # def median_function():
 #     median_list = []
@@ -137,11 +137,3 @@
 
     # math_function2 = statistics.mode([30,30,30,40,50])
     # print(math_function2)
-    
-#sys module 
-import sys
-print("Hello,", sys.argv[1])
-#packages
-import cowsay
-question = input("What is your name: ")
-cowsay.milk("Hello " + question)
