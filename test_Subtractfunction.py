@@ -12,3 +12,5 @@ def test_subtract():
     
 if __name__ == '__main__':
     main()
+    
+#Used pytest to test
