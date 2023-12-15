@@ -145,3 +145,32 @@
 # import cowsay
 # question = input("What is your name: ")
 # cowsay.milk("Hello " + question)
+
+# #APIs 
+# import json
+# import requests
+# import sys
+
+# if len(sys.argv) != 2:
+#     sys.exit()
+
+# response = requests.get("https://itunes.apple.com/search?entity=song&limit=50&term=" + sys.argv[1])
+
+# # print (json.dumps(response.json()))
+# o = response.json()
+# for result in o["results"]:
+#     print (result["trackName"])
+    
+#my package
+def main():
+    welcome("Hello")
+    goodbye("Hello")
+
+def welcome(name):
+    print(f"Hi there, {name}")
+    
+def goodbye(name):
+    print(f"Adios, {name}")
+ 
+if __name__ == '__main__':   #ensure main doesn't run when used as a module
+    main()
