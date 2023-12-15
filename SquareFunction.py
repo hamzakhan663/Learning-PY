@@ -1,17 +1,16 @@
-def main(user_input):
+def main():
     while True:
         try:
-            number = int(user_input)
+            user_input = (input("Enter a number: "))
         except ValueError:
             print("Not a number")
         else:
-            print(squared(number))
+            print(squared(user_input))
             break
     
 
 def squared(n):
-    return n*n
+    return pow(n, 2)
 
 if __name__ == "__main__":
-    user_input = input("Enter a number: ")
-    main(user_input)
+    main()

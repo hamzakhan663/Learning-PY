@@ -2,7 +2,7 @@ from Add_Subfunction import add
 def main():
     test_add()
  
-#assert function    
+#assert function to test conditions
 def test_add():
     assert add(5,5) == 10
     assert add(10,10) == 20
