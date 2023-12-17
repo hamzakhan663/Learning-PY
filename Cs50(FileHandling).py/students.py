@@ -4,10 +4,7 @@
 # # file.close()
 from time import sleep
 with open("Cs50(FileHandling).py/students.txt", "r") as file:
-    lines = file.readlines()
-
-print(f"Students in SS2 are: ")
- 
-for line in lines:
-    sleep(2)
-    print(line, end = "")
+    print(f"Students in SS2 are: ")
+    for line in file:
+        sleep(2)
+        print(line, end = "")
