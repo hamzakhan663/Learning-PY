@@ -9,4 +9,9 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 persons = ["Hamza", "Jafar", "Nuriyah", "Abdullah"]
 
 result = map(congrats, persons)
-print (list(result))
+print (list(result))    
+
+
+# marks = student_marks[query_name]
+#     average = sum(marks) / len(marks)
+#     print(f"{average:.2f}")
