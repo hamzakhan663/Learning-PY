@@ -54,10 +54,10 @@ with open("Cs50(FileHandling).py/students.csv", "r") as file:
     print("List of students are as follows:")
     #for one line in the csv file..
     for line in sorted(file):
-        #remove right whitespace from the value then separate them
-        name, gender, year = line.rstrip().split(",")
+        #remove right whitespace from the value then separate them when a comma is encountered
+        fname, sname, gender, year = line.rstrip().split(",")
         sleep(2)
-        print (f"{name} is a {gender.lower()} in {year}.")
+        print (f"{fname} {sname} is a {gender.lower()} in {year}.")
 
 with open("Cs50(FileHandling).py/rejected_students.csv", "r") as file2:
     for line in file2:
