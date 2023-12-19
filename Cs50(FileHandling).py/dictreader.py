@@ -2,16 +2,16 @@
 # csv module usage
 # Initialize empty list
 from time import sleep
-from csv import reader
+import csv
 students = []
 
-with open("Cs50(FileHandling).py/students.csv") as file:
+with open("Cs50(FileHandling).py/students(dict).csv") as file:
     #reader variable holds the reader object that reads the content of the csv file
-   reader = reader(file)
+   reader = csv.DictReader(file)
    #iterate through the rows in reader variable(csv file)
-   for fname, sname, gender, year in reader:
+   for row in reader:
        #append dictionary into list(.lower changes gender values to lowercase)
-       student = {"fname":fname, "sname":sname, "gender":gender.lower(), "year":year}
+       student = {"fname":row["fname"], "sname":row["sname"], "gender":row["gender".lower()], "year":row["year"]}
        students.append(student)
         
 # def get_sname(student):
