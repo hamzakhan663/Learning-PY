@@ -11,8 +11,8 @@ with open("Cs50(FileHandling).py/students(dict).csv") as file:
    #iterate through the rows in reader variable(csv file)
    for row in reader:
        #append dictionary into list(.lower changes gender values to lowercase)
-       student = {"fname":row["fname"], "sname":row["sname"], "gender":row["gender".lower()], "year":row["year"]}
-       students.append(student)
+    #    student = {"fname":row["fname"], "sname":row["sname"], "gender":row["gender".lower()], "year":row["year"]}
+       students.append(row)
         
 # def get_sname(student):
 #     return student["sname"]
