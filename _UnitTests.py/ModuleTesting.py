@@ -1,4 +1,4 @@
-from Cs50_Libraries import welcome, goodbye
+from _Libraries import welcome, goodbye
 
 import Add_Subfunction
 
