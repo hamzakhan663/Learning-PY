@@ -36,7 +36,7 @@ import re
 #     print("Invalid")
     
 email = input("What's your email address: ").strip()
-if re.search(r"^\w+@(\w+\.)?\w+\.com$", email, re.IGNORECASE): # regex pattern - finds the start of one or more alphanumeric character before @ then zero or more repetitions of a sub domain name after @ then one or more alphanumeric character then ends with .com (nothing else after)
+if re.search(r"^\w+@(\w+\.)?\w+\.com$", email, re.IGNORECASE): # regex pattern - finds the start of one or more alphanumeric characters before @ then zero or more repetitions of a sub domain name after @ then one or more alphanumeric character then ends with .com (nothing else after)
     print("Valid.")       
 else:
     print("Invalid")
