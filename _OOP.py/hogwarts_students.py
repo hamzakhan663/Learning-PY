@@ -6,27 +6,15 @@ class Student:
             raise ValueError("Invalid House")
         self.name = name
         self.house = house
-        # self.patronus = patronus
+       
 
     def __str__(self):
         return f" Hi, {self.name}. Welcome to your house, {self.house}."
     
-    # def charms(self):
-    #     match self.patronus:
-    #         case "Witcher":
-    #             return "🐺"
-    #         case "Mermaid":
-    #             return "🧜🏼‍♀️"
-    #         case "Unicorn":
-    #             return "🦄" 
-    #         case "Knight":
-    #             return "🛡️"
-    #         case _:
-    #             return "🪄"
+    
 
 def main():
     student = get_students()
-    # print ("Expecto Patronum!")
     print(student)
 
 def get_students():
