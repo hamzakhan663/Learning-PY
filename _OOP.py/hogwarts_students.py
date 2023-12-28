@@ -14,9 +14,8 @@ class Student:
     
 
 def main():
-    student = get_students()
-    print(student)
-
+    print(get_students())
+    
 def get_students():
     name = input("Name: ")
     house = input("House: ")
