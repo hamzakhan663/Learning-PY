@@ -1,3 +1,6 @@
+#Call the same method on multiple objects.
+
+
 class Gryffindor:
     def __init__(self, name):
         self.name = name
