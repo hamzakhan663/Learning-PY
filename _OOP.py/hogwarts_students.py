@@ -7,27 +7,27 @@ class Student:
     def __str__(self):
         return f" Hi, {self.name}. Welcome to your house, {self.house}."
     
-    @property
-    def name(self):
-        return self._name
+    # @property
+    # def name(self):
+    #     return self._name
     
-    @name.setter
-    def name(self,name):
-        if not name:
-            raise ValueError("Provide a name")
-        self._name = name
+    # @name.setter
+    # def name(self,name):
+    #     if not name:
+    #         raise ValueError("Provide a name")
+    #     self._name = name
         
         
     
-    @property
-    def house(self):
-        return self._house
+    # @property
+    # def house(self):
+    #     return self._house
     
-    @house.setter
-    def house(self, house):
-         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
-            raise ValueError("Invalid House")
-         self._house = house
+    # @house.setter
+    # def house(self, house):
+    #      if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
+    #         raise ValueError("Invalid House")
+    #      self._house = house
 
 def main():
     student = get_students()
