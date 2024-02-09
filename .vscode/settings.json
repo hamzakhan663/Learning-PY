@@ -84,5 +84,8 @@
         "Zayn",
         "Zaynab",
         "Zikzak"
+    ],
+    "python.analysis.extraPaths": [
+        "./_UnitTests"
     ]
 }
